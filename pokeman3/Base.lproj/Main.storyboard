@@ -267,7 +267,7 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C24-cD-rmQ">
-                                                        <rect key="frame" x="228" y="0.0" width="115" height="20.5"/>
+                                                        <rect key="frame" x="236" y="0.0" width="107" height="20.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-lY-DMq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
@@ -279,9 +279,9 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="63" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4h-9M-frB">
-                                                                <rect key="frame" x="90" y="0.0" width="25" height="20.5"/>
+                                                                <rect key="frame" x="90" y="0.0" width="17" height="20.5"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="25" id="4Fc-SP-6Vs"/>
+                                                                    <constraint firstAttribute="width" constant="17" id="4Fc-SP-6Vs"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
