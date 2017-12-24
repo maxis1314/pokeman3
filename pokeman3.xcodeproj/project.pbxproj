@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A67431FCC82BFEA3C6CB484 /* Pods_pokeman3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134D4B38E4B8A2A99AD54F93 /* Pods_pokeman3.framework */; };
 		C2A26C2E1FEF4AC60010A7D8 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A26C2D1FEF4AC60010A7D8 /* PokemonDetailVC.swift */; };
 		C2A605261FEE6EF5001A6584 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A605251FEE6EF5001A6584 /* PokeCell.swift */; };
 		C2A605281FEE9661001A6584 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A605271FEE9661001A6584 /* csv.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		134D4B38E4B8A2A99AD54F93 /* Pods_pokeman3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeman3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A26C2D1FEF4AC60010A7D8 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		C2A605251FEE6EF5001A6584 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		C2A605271FEE9661001A6584 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		C2FA51E91FE6B7F300E8B1D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FA51EF1FE6B90E00E8B1D5 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		C2FA51F21FE6BBA500E8B1D5 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C70C8AE706B7FF39CB164E1A /* Pods-pokeman3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeman3.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokeman3/Pods-pokeman3.release.xcconfig"; sourceTree = "<group>"; };
+		D66C6A930F432FEC93D57D9C /* Pods-pokeman3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeman3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokeman3/Pods-pokeman3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A67431FCC82BFEA3C6CB484 /* Pods_pokeman3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16715942F73164FEC81DE536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D66C6A930F432FEC93D57D9C /* Pods-pokeman3.debug.xcconfig */,
+				C70C8AE706B7FF39CB164E1A /* Pods-pokeman3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C2A605241FEE6E9F001A6584 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +106,8 @@
 			children = (
 				C2FA51DC1FE6B7F300E8B1D5 /* pokeman3 */,
 				C2FA51DB1FE6B7F300E8B1D5 /* Products */,
+				16715942F73164FEC81DE536 /* Pods */,
+				E5459E64D58F3D4E3BAF9621 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +144,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		E5459E64D58F3D4E3BAF9621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				134D4B38E4B8A2A99AD54F93 /* Pods_pokeman3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2FA51EC1FE6B7F300E8B1D5 /* Build configuration list for PBXNativeTarget "pokeman3" */;
 			buildPhases = (
+				B12B53F9609AE339B738759D /* [CP] Check Pods Manifest.lock */,
 				C2FA51D61FE6B7F300E8B1D5 /* Sources */,
 				C2FA51D71FE6B7F300E8B1D5 /* Frameworks */,
 				C2FA51D81FE6B7F300E8B1D5 /* Resources */,
+				5857F06836142779CD393CC9 /* [CP] Embed Pods Frameworks */,
+				77209042F83C7EBB2A439C42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5857F06836142779CD393CC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pokeman3/Pods-pokeman3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokeman3/Pods-pokeman3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77209042F83C7EBB2A439C42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokeman3/Pods-pokeman3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B12B53F9609AE339B738759D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokeman3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2FA51D61FE6B7F300E8B1D5 /* Sources */ = {
@@ -329,6 +410,7 @@
 		};
 		C2FA51ED1FE6B7F300E8B1D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66C6A930F432FEC93D57D9C /* Pods-pokeman3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pokeman3/Info.plist;
@@ -341,6 +423,7 @@
 		};
 		C2FA51EE1FE6B7F300E8B1D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70C8AE706B7FF39CB164E1A /* Pods-pokeman3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pokeman3/Info.plist;
