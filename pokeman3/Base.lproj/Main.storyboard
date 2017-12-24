@@ -193,10 +193,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ebC-df-cl4">
-                                <rect key="frame" x="16" y="73" width="343" height="249"/>
+                                <rect key="frame" x="16" y="73" width="343" height="259"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HvP-o8-B6d">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="148"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HvP-o8-B6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="158"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wuv-ZV-Ex5">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
@@ -211,7 +211,7 @@
                                                 <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </segmentedControl>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-nN-FA4">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="120"/>
+                                                <rect key="frame" x="0.0" y="38" width="343" height="120"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-tD-2Ax">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -244,7 +244,7 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nUY-Yn-yhI">
-                                        <rect key="frame" x="0.0" y="168" width="343" height="80.5"/>
+                                        <rect key="frame" x="0.0" y="178" width="343" height="80.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qLv-w8-3gH">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -394,12 +394,14 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                                     <constraint firstAttribute="trailing" secondItem="nUY-Yn-yhI" secondAttribute="trailing" id="xOx-kp-0Nu"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98j-zx-51D">
-                                <rect key="frame" x="0.0" y="373" width="375" height="31"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98j-zx-51D">
+                                <rect key="frame" x="0.0" y="489" width="375" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Evolution: Venusaur LV L32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH6-Na-yJg">
-                                        <rect key="frame" x="81" y="3" width="218" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LV L32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH6-Na-yJg">
+                                        <rect key="frame" x="0.0" y="5" width="375" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="OWv-R4-gsf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -407,18 +409,20 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="dH6-Na-yJg" firstAttribute="leading" secondItem="98j-zx-51D" secondAttribute="leading" id="2JC-az-3yA"/>
                                     <constraint firstAttribute="height" constant="30" id="hdR-zW-l1W"/>
+                                    <constraint firstItem="dH6-Na-yJg" firstAttribute="centerY" secondItem="98j-zx-51D" secondAttribute="centerY" id="lSC-O0-b9O"/>
+                                    <constraint firstAttribute="trailing" secondItem="dH6-Na-yJg" secondAttribute="trailing" id="yu6-l5-z4r"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-Em-ANA">
-                                <rect key="frame" x="51" y="444" width="240" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-Em-ANA">
+                                <rect key="frame" x="55" y="539" width="265" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-ln-bLy">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="XwH-ln-bLy">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-Xf-DdS">
-                                        <rect key="frame" x="120" y="0.0" width="120" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-Xf-DdS">
+                                        <rect key="frame" x="145" y="0.0" width="120" height="120"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -427,8 +431,12 @@ Devslopes is the most affordable and effective way to learn iOS development, web
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ebC-df-cl4" secondAttribute="trailing" id="66M-uF-4dD"/>
                             <constraint firstAttribute="trailing" secondItem="uDI-KA-b61" secondAttribute="trailing" id="9DC-YL-CZx"/>
+                            <constraint firstItem="s4U-Em-ANA" firstAttribute="top" secondItem="98j-zx-51D" secondAttribute="bottom" constant="20" id="F5B-LW-ynl"/>
                             <constraint firstItem="ebC-df-cl4" firstAttribute="leading" secondItem="cCm-mb-B69" secondAttribute="leadingMargin" id="QYc-wd-Tlt"/>
                             <constraint firstItem="uDI-KA-b61" firstAttribute="leading" secondItem="cCm-mb-B69" secondAttribute="leading" id="Qqo-fx-dhb"/>
+                            <constraint firstItem="Phd-7d-HKj" firstAttribute="top" secondItem="s4U-Em-ANA" secondAttribute="bottom" constant="8" id="UCe-vf-vwS"/>
+                            <constraint firstItem="98j-zx-51D" firstAttribute="centerX" secondItem="cCm-mb-B69" secondAttribute="centerX" id="UI4-my-dAh"/>
+                            <constraint firstItem="s4U-Em-ANA" firstAttribute="centerX" secondItem="cCm-mb-B69" secondAttribute="centerX" id="mlr-3z-zoP"/>
                             <constraint firstItem="uDI-KA-b61" firstAttribute="top" secondItem="cCm-mb-B69" secondAttribute="top" id="uJL-Zb-KLj"/>
                             <constraint firstItem="98j-zx-51D" firstAttribute="leading" secondItem="cCm-mb-B69" secondAttribute="leading" id="xDq-MU-fgx"/>
                             <constraint firstAttribute="trailing" secondItem="98j-zx-51D" secondAttribute="trailing" id="xec-Tq-mJ0"/>
