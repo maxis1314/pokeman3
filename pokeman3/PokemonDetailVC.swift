@@ -28,9 +28,15 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLbl.text = pokemon.name
-
+        
+        pokemon.downloadPokemonDetail {
+            self.updateUI()
+        }
     }
 
+    func updateUI(){
+        
+    }
 
     @IBAction func backBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

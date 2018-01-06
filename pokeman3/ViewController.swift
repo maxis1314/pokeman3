@@ -41,7 +41,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         do{
             musicPlayer = try AVAudioPlayer(contentsOf: URL(string:path)!)
             musicPlayer.numberOfLoops = -1
-            musicPlayer.play()
+            //musicPlayer.play()
         }catch let err as NSError{
             print(err.debugDescription)
         }
